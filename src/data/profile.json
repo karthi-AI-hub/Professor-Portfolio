@@ -1,0 +1,253 @@
+{
+  "personalInfo": {
+    "name": "Kiruthika Kuppusaamy",
+    "title": "Assistant Professor",
+    "designation": "Assistant Professor, MCA Department",
+    "institution": "K.S. Rangasamy College of Technology",
+    "department": "MCA Department",
+    "location": "Tiruchengode",
+    "photo": "/profile-photo.jpg",
+    "tagline": "Empowering students through technology education and innovation",
+    "email": "kiruthika@ksrct.ac.in",
+    "phone": "+91 9842266183",
+    "office": "MCA Department, K.S. Rangasamy College of Technology, Tiruchengode",
+    "officeHours": "Available for academic consultations and research collaborations"
+  },
+  "socialLinks": {
+    "website": "https://kkiruthikha.wordpress.com",
+    "github": "https://github.com/KiruthikaKuppusaamy",
+    "linkedin": "",
+    "youtube": "https://www.youtube.com/@kiruthikakuppusaamy",
+    "facebook": "https://www.facebook.com/kkiruthikha",
+    "twitter": "https://twitter.com/kkiruthikha",
+    "instagram": "https://www.instagram.com/kkiruthikha"
+  },
+  "about": {
+    "biography": "I began my career as a School Teacher at Jaycees Matriculation Higher Secondary School, Erode. My journey in higher education started when I stepped in as a Lecturer at Muthayammal College of Arts and Science, Rasipuram, where I worked for two years. I then continued my service at K.S. Rangasamy College of Arts and Science, Tiruchengode – a golden period in my career that gave me immense exposure to the teaching field. I had the privilege of working there for nearly 10 years. Later, I served at Vellalar College for Women (Autonomous), Erode for six years. This is the place where I found the spark to create this blog and began posting videos to share knowledge with a wider audience. My journey then took me back to K.S. Rangasamy College of Technology, Tiruchengode, where I worked as a Technical Trainer in the Training and Placement Department. This role gave me the opportunity to explore my own learning skills while interacting with bright young minds. Currently, I am working as an Assistant Professor in the MCA Department at K.S. Rangasamy College of Technology. This role continues to inspire me to grow, learn, and contribute more meaningfully to the academic community.",
+    "mission": "This blog is my humble attempt to share the knowledge and experiences I've gathered over the years, and to provide insights into the subjects I have learned – from my own perspective.",
+    "experience": "18+ years of teaching experience",
+    "highlights": [
+      "18+ years of teaching excellence across multiple institutions",
+      "Technical Training Leadership for student industry placement",
+      "Digital Education Pioneer with extensive online resources and video tutorials",
+      "Open Source Contributor maintaining educational repositories on GitHub",
+      "Expert in Programming (C, Python, C#), Mathematics, AI, and Educational Technology"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Recognized University",
+      "year": "",
+      "focus": "Computer Applications and Software Engineering"
+    },
+    {
+      "degree": "Bachelor of Computer Science",
+      "institution": "Recognized University",
+      "year": "",
+      "focus": "Computer Science and Programming"
+    }
+  ],
+  "positions": [
+    {
+      "title": "Assistant Professor",
+      "institution": "K.S. Rangasamy College of Technology",
+      "department": "MCA Department",
+      "location": "Tiruchengode",
+      "period": "Present",
+      "duration": "Current",
+      "description": "Leading master's level courses in computer applications and guiding research initiatives. This role continues to inspire me to grow, learn, and contribute more meaningfully to the academic community."
+    },
+    {
+      "title": "Technical Trainer",
+      "institution": "K.S. Rangasamy College of Technology",
+      "department": "Training and Placement Department",
+      "location": "Tiruchengode",
+      "period": "Previous Role",
+      "duration": "",
+      "description": "Worked as a Technical Trainer in the Training and Placement Department. This role gave me the opportunity to explore my own learning skills while interacting with bright young minds. Prepared students for industry readiness through comprehensive technical training programs."
+    },
+    {
+      "title": "Faculty Member",
+      "institution": "Vellalar College for Women (Autonomous)",
+      "department": "Computer Science",
+      "location": "Erode",
+      "period": "Previous Role",
+      "duration": "6 years",
+      "description": "Served for six years teaching undergraduate and postgraduate computer science courses. This is the place where I found the spark to create this blog and began posting videos to share knowledge with a wider audience."
+    },
+    {
+      "title": "Faculty Member",
+      "institution": "K.S. Rangasamy College of Arts and Science",
+      "department": "Computer Science",
+      "location": "Tiruchengode",
+      "period": "Previous Role",
+      "duration": "Nearly 10 years",
+      "description": "Continued service at K.S. Rangasamy College of Arts and Science, Tiruchengode – a golden period in my career that gave me immense exposure to the teaching field. Had the privilege of working there for nearly 10 years. Developed curriculum and taught core computer science subjects."
+    },
+    {
+      "title": "Lecturer",
+      "institution": "Muthayammal College of Arts and Science",
+      "department": "Computer Science",
+      "location": "Rasipuram",
+      "period": "Previous Role",
+      "duration": "2 years",
+      "description": "My journey in higher education started when I stepped in as a Lecturer at Muthayammal College of Arts and Science, Rasipuram, where I worked for two years. Delivered foundational courses in computer applications."
+    },
+    {
+      "title": "School Teacher",
+      "institution": "Jaycees Matriculation Higher Secondary School",
+      "department": "Computer Science",
+      "location": "Erode",
+      "period": "Career Beginning",
+      "duration": "",
+      "description": "I began my career as a School Teacher at Jaycees Matriculation Higher Secondary School, Erode. Career beginning teaching computer science at school level."
+    }
+  ],
+  "research": {
+    "interests": [
+      "Artificial Intelligence and Machine Learning",
+      "Cybersecurity and Information Security",
+      "Emerging Technologies in Education",
+      "Programming Language Design and Teaching Methodologies",
+      "Electric Vehicle Technology",
+      "Digital Learning Methodologies and Online Education"
+    ],
+    "overview": "My research focuses on exploring the practical applications of technology in education and industry. I am particularly interested in AI applications for enhanced learning experiences, cybersecurity education, and developing innovative methods to integrate emerging technologies into classroom teaching, making complex technical concepts accessible to students.",
+    "areas": [
+      "AI Chatbots in Education (ChatGPT, Gemini, Copilot)",
+      "Cybersecurity Education and Google Dorking Techniques",
+      "Open Source Tools for Digital Content Creation",
+      "Electric Vehicle Technology and Sustainable Transportation",
+      "Programming Education using Modern Teaching Methods"
+    ],
+    "projects": [
+      {
+        "title": "Artificial Intelligence Applications in Education",
+        "description": "Exploring the practical applications of AI in education and industry, including comparative analysis of AI chatbots and emerging AI technologies for enhanced learning experiences",
+        "status": "Ongoing",
+        "funding": "Educational Research Initiative"
+      },
+      {
+        "title": "Cybersecurity Education Framework",
+        "description": "Developing comprehensive cybersecurity curricula covering Google Dorking techniques, information security fundamentals, and cyber attack prevention strategies",
+        "status": "Ongoing",
+        "funding": "Department Research Grant"
+      },
+      {
+        "title": "Technology Integration in Teaching",
+        "description": "Researching innovative methods to integrate emerging technologies into classroom teaching, making complex technical concepts accessible to students",
+        "status": "Ongoing",
+        "funding": "Institutional Support"
+      }
+    ]
+  },
+  "teaching": {
+    "philosophy": "I believe in making technology education accessible, engaging, and practical. My teaching approach combines theoretical foundations with hands-on experience, ensuring students not only understand concepts but can apply them in real-world scenarios. I strive to create engaging learning environments that foster innovative thinking among students. This blog is my humble attempt to share the knowledge and experiences I've gathered over the years.",
+    "courses": [
+      {
+        "code": "MCA-C",
+        "name": "C for Beginners",
+        "level": "Undergraduate",
+        "description": "Foundational programming course covering C language fundamentals, data structures, operators, arrays, pointers, and algorithm development. Comprehensive video tutorials and PDF notes available."
+      },
+      {
+        "code": "MCA-PY",
+        "name": "Python Programming",
+        "level": "Undergraduate/Postgraduate",
+        "description": "Comprehensive Python course covering basics to advanced topics including data types, strings, lists, tuples, dictionaries, file handling, NumPy, and real-world applications."
+      },
+      {
+        "code": "MCA-CS",
+        "name": "C# Programming",
+        "level": "Postgraduate",
+        "description": "Object-oriented programming with C#, covering console applications, Windows applications, .NET framework, and GUI development."
+      },
+      {
+        "code": "MCA-MATH",
+        "name": "Allied Mathematics",
+        "level": "Undergraduate",
+        "description": "Mathematical foundations for computer science including Numerical Methods (Gauss Elimination, Newton's Raphson), Statistics (Mean, Median, Mode), and Discrete Mathematics (Lattices, Graphs, Algebraic Structures)."
+      }
+    ],
+    "teachingMethods": [
+      "Video tutorials posted on YouTube for widespread access",
+      "Comprehensive PDF notes and presentations",
+      "GitHub repositories with code examples and projects",
+      "Interactive quizzes and puzzles (Brain Pops)",
+      "Real-world problem-solving approach",
+      "Hands-on coding exercises and assignments"
+    ],
+    "students": {
+      "current": {
+        "phd": 0,
+        "masters": 15
+      },
+      "graduated": {
+        "phd": 0,
+        "masters": 100
+      },
+      "reach": "Students worldwide through online educational content and video tutorials"
+    }
+  },
+  "achievements": [
+    {
+      "title": "18+ Years of Teaching Excellence",
+      "organization": "Multiple Prestigious Institutions",
+      "year": 2025,
+      "description": "Consistently delivered high-quality education across multiple prestigious institutions including K.S. Rangasamy College of Technology, Vellalar College for Women, and others."
+    },
+    {
+      "title": "Digital Education Pioneer",
+      "organization": "Educational Community",
+      "year": 2024,
+      "description": "Created extensive online educational resources, video tutorials, and blog content at kkiruthikha.wordpress.com. Found the spark to create blog and began posting videos to share knowledge with a wider audience."
+    },
+    {
+      "title": "Technical Training Leadership",
+      "organization": "K.S. Rangasamy College of Technology",
+      "year": 2024,
+      "description": "Successfully prepared hundreds of students for industry placement through comprehensive technical training programs in the Training and Placement Department."
+    },
+    {
+      "title": "Open Source Educational Contributor",
+      "organization": "GitHub Community",
+      "year": 2024,
+      "description": "Actively maintains educational repositories on GitHub (github.com/KiruthikaKuppusaamy) with course materials, code examples, and programming tutorials for C, Python, NumPy, and more."
+    }
+  ],
+  "contentCreation": {
+    "blog": {
+      "url": "https://kkiruthikha.wordpress.com",
+      "description": "Educational blog sharing knowledge and experiences in programming, technology, and teaching",
+      "sections": [
+        "Classroom - Programming courses and tutorials",
+        "Brain Pops - Quizzes and puzzles for learning",
+        "Techie Bites - Technology articles and insights",
+        "Time Pass - Fun mathematical puzzles and games"
+      ]
+    },
+    "github": {
+      "url": "https://github.com/KiruthikaKuppusaamy",
+      "repositories": [
+        "C-Programming",
+        "Python-List",
+        "Python-Dictionary",
+        "Python-Files",
+        "NumPy",
+        "Tuples"
+      ],
+      "description": "All course materials, code examples, and projects available for student reference"
+    },
+    "youtube": {
+      "url": "https://www.youtube.com/@kiruthikakuppusaamy",
+      "description": "Educational video tutorials on C programming, Python, Mathematics, and Computer Science concepts",
+      "content": "40+ tutorial videos covering programming fundamentals, operators, data structures, numerical methods, and more"
+    }
+  },
+  "seo": {
+    "title": "Kiruthika Kuppusaamy - Assistant Professor | MCA Department | Computer Science Educator",
+    "description": "Kiruthika Kuppusaamy is an Assistant Professor at K.S. Rangasamy College of Technology, MCA Department, with 18+ years of teaching experience. Explore programming courses (C, Python, C#), mathematics tutorials, technology articles, and educational resources.",
+    "keywords": "Kiruthika Kuppusaamy, Assistant Professor, MCA, K.S. Rangasamy College of Technology, Computer Science, Programming Tutorials, C Programming, Python Programming, C# Programming, Allied Mathematics, Numerical Methods, Teaching, Educational Technology, AI, Cybersecurity, Tiruchengode"
+  }
+}

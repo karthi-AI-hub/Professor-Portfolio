@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 24% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 24% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 24% 16%;
+
+    /* Academic teal primary color */
+    --primary: 173 58% 39%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 173 58% 55%;
+
+    /* Soft background for sections */
+    --secondary: 174 44% 96%;
+    --secondary-foreground: 173 58% 25%;
+
+    --muted: 210 20% 94%;
+    --muted-foreground: 210 12% 45%;
+
+    /* Accent teal for highlights */
+    --accent: 173 58% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 173 58% 39%;
+
+    --radius: 0.5rem;
+    
+    /* Advanced design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(173 58% 39%) 0%, hsl(193 58% 45%) 50%, hsl(173 58% 39%) 100%);
+    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(173 58% 39% / 0.1), transparent 70%);
+    --section-accent: hsl(173 58% 39% / 0.05);
+    --section-border: hsl(173 58% 39% / 0.1);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(173 58% 39% / 0.08);
+    --shadow-md: 0 4px 16px hsl(173 58% 39% / 0.12);
+    --shadow-lg: 0 8px 32px hsl(173 58% 39% / 0.16);
+    --shadow-glow: 0 0 40px hsl(173 58% 55% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 24% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 20% 16%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 20% 16%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 173 58% 50%;
+    --primary-foreground: 210 24% 12%;
+    --primary-glow: 173 58% 65%;
+
+    --secondary: 210 20% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 20% 20%;
+    --muted-foreground: 210 12% 65%;
+
+    --accent: 173 58% 50%;
+    --accent-foreground: 210 24% 12%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 24%;
+    --input: 210 20% 24%;
+    --ring: 173 58% 50%;
+    
+    --hero-gradient: linear-gradient(135deg, hsl(173 58% 50%) 0%, hsl(193 58% 55%) 50%, hsl(173 58% 50%) 100%);
+    --gradient-radial: radial-gradient(circle at 50% 0%, hsl(173 58% 50% / 0.15), transparent 70%);
+    --section-accent: hsl(173 58% 50% / 0.08);
+    --section-border: hsl(173 58% 50% / 0.15);
+    
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 16px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 32px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(173 58% 65% / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)), hsl(var(--primary)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .card-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

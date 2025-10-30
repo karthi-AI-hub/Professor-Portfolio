@@ -1,0 +1,152 @@
+{
+  "title": "BrainPop",
+  "tagline": "Feeding your brain is as important as feeding your body!",
+  "author": "by Peter Davies",
+  "description": "Brain-challenging quizzes, puzzles, and educational games to reinforce programming and computer science concepts.",
+  "categories": [
+    {
+      "id": "c-programming",
+      "title": "C Programming",
+      "quizzes": [
+        {
+          "id": "scrambled-words-1",
+          "title": "#1: Scrambled Words in C Language",
+          "description": "Answer should be in CAPITAL letters only",
+          "url": "https://forms.gle/DgjwyRFoJjiBnoKQ7",
+          "type": "Scrambled Words"
+        },
+        {
+          "id": "scrambled-words-2",
+          "title": "#2: Scrambled Words in C Language",
+          "description": "Answer should be in CAPITAL letters only",
+          "url": "https://forms.gle/iZqXjdtt4pCaET2a9",
+          "type": "Scrambled Words"
+        },
+        {
+          "id": "scrambled-words-3",
+          "title": "#3: Scrambled Words in C Language",
+          "description": "Answer should be in CAPITAL letters only",
+          "url": "https://forms.gle/quV4nSFP324bsxxR8",
+          "type": "Scrambled Words"
+        },
+        {
+          "id": "crossword-puzzles",
+          "title": "#4: Crossword puzzles in C Language",
+          "description": "Read the instructions before answering",
+          "url": "https://forms.gle/g7NmQju9RisL12jVA",
+          "type": "Crossword"
+        },
+        {
+          "id": "visual-puzzles",
+          "title": "#5: Visual puzzles in Computer Programming Languages",
+          "description": "Read the instructions before answering – Use only UPPERCASE or lowercase. Don't Capitalise Each Word",
+          "url": "https://forms.gle/SWyxctbRsdJP3TDz9",
+          "type": "Visual Puzzle"
+        },
+        {
+          "id": "coding-puzzles",
+          "title": "#6: Coding Puzzles in C Language",
+          "description": "Fill the Blanks in the Coding. Each one of us will follow different methods to get same output. If you have different answer than what is provided, mail us. Try in Online C Compiler Website: https://www.onlinegdb.com/online_c_compiler",
+          "url": "https://forms.gle/j3KWb5BYQTyHasTc6",
+          "type": "Coding Puzzle"
+        },
+        {
+          "id": "c-instructions",
+          "title": "#7: C Instructions",
+          "description": "Point out errors, Evaluate the expression, True/False, Fill in the blanks",
+          "url": "https://forms.gle/5SpMxH9ZjTZeeY4Z6",
+          "type": "Mixed Quiz"
+        },
+        {
+          "id": "c-arrays-1",
+          "title": "#8: C Arrays – 1",
+          "description": "Choose the correct option",
+          "url": "https://forms.gle/imaYCZaXe4iAy3Az9",
+          "type": "Multiple Choice"
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "title": "General",
+      "quizzes": [
+        {
+          "id": "cyber-security-1",
+          "title": "#1: Word Search Puzzles related to Cyber Security",
+          "description": "If the words are new, refer internet and learn the meaning of that. This is to help you to know the Terms related to Cyber Security.",
+          "url": "https://thewordsearch.com/puzzle/1140664/",
+          "type": "Word Search"
+        },
+        {
+          "id": "cyber-security-2",
+          "title": "#2: Word Search Puzzles related to Cyber Security",
+          "description": "If the words are new, refer internet and learn the meaning of that. This is to help you to know the Terms related to Cyber Security.",
+          "url": "https://thewordsearch.com/puzzle/1140912/",
+          "type": "Word Search"
+        },
+        {
+          "id": "cyber-security-3",
+          "title": "#3: Word Search Puzzles related to Cyber Security",
+          "description": "If the words are new, refer internet and learn the meaning of that. This is to help you to know the Terms related to Cyber Security.",
+          "url": "https://thewordsearch.com/puzzle/1140864/",
+          "type": "Word Search"
+        },
+        {
+          "id": "programming-languages",
+          "title": "#4: Word Search Puzzles in Computer Programming Languages",
+          "description": "Read the instructions before answering – Use only UPPERCASE or lowercase. Don't Capitalise Each Word",
+          "url": "https://forms.gle/n68BoS1nu4C8hMVj6",
+          "type": "Word Search"
+        }
+      ]
+    },
+    {
+      "id": "python-programming",
+      "title": "Python Programming",
+      "quizzes": [
+        {
+          "id": "python-basic-quiz-1",
+          "title": "#1: Python Basic Quiz 1",
+          "description": "Read the instructions before answering",
+          "url": "https://forms.gle/jU2hjqCV5M1Q2Hms9",
+          "type": "Multiple Choice"
+        },
+        {
+          "id": "python-string-quiz-1",
+          "title": "#2: Python String Quiz 1",
+          "description": "Read the instructions before answering",
+          "url": "https://forms.gle/wDsaCeUwMM1mpV2o8",
+          "type": "Multiple Choice"
+        },
+        {
+          "id": "python-string-quiz-2",
+          "title": "#3: Python String Quiz 2",
+          "description": "Read the instructions before answering",
+          "url": "https://forms.gle/T7aW2mPsTRYn9oN29",
+          "type": "Multiple Choice"
+        },
+        {
+          "id": "python-list-quiz-1",
+          "title": "#4: Python List Quiz 1",
+          "description": "Read the instructions before answering",
+          "url": "https://forms.gle/w1XE8YHjTnvw4n1Y8",
+          "type": "Multiple Choice"
+        },
+        {
+          "id": "python-collections",
+          "title": "#5: List, Tuples, Set, Dictionary",
+          "description": "Read the instructions before answering",
+          "url": "https://forms.gle/ZuV76V8PApkur1BZ6",
+          "type": "Multiple Choice"
+        },
+        {
+          "id": "numpy-quiz",
+          "title": "#6: NumPy",
+          "description": "Read the instructions before answering",
+          "url": "https://forms.gle/9KE3dvffV5GLFbgQ9",
+          "type": "Multiple Choice"
+        }
+      ]
+    }
+  ]
+}

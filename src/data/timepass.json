@@ -1,0 +1,57 @@
+{
+  "title": "TimePass",
+  "description": "Brain out Games video links are posted in this page. Fun with mathematics, brain teasers, and creative problem-solving puzzles.",
+  "entries": [
+    {
+      "id": "birth-year-trick",
+      "title": "Birth Year from Mobile Number",
+      "category": "Fun with numbers",
+      "type": "Math Trick",
+      "content": "This is a clever math-based mind-reading trick that works due to the properties of numbers and multiples of 9.\n\nThe core idea is that when someone rearranges the digits of a four-digit number and subtracts, the result is always a multiple of 9. The sum of the digits of any multiple of 9 always reduces to 9 when summed repeatedly.\n\nWhy it is always 9?\n\nConsider any four-digit number uvwx (where u, v, w and x are digits)\n\nThis number can be written mathematically as:\n1000u + 100v + 10w + x\n\nSimilarly, the rearranged number xwvu can be written as:\n1000x + 100w + 10v + u\n\nNow, when we subtract these two numbers:\n(1000u + 100v + 10w + x) – (1000x + 100w + 10v + u)\n\nRearrange terms:\n(1000u – u) + (100v – 10v) + (10w – 100w) + (x – 1000x)\n\nFactor out common terms:\n999u + 90v – 90w – 999x\n\nSince 999 and 90 are multiples of 9, the whole expression is a multiple of 9.\n\nThus, the difference between any two numbers formed by rearranging the same four digits will always be a multiple of 9.\n\nBy adding 16 to this sum (which is always 9), we always get 25. When they add 25 to their birth year and tell you the result, you simply subtract 25, revealing their birth year like magic!",
+      "featured": true
+    },
+    {
+      "id": "brainvita",
+      "title": "Brainvita Puzzle Solutions",
+      "category": "Puzzle Games",
+      "type": "Puzzle Game",
+      "content": "Step-by-step video solutions for solving the classic Brainvita board game puzzle using strategic moves and pattern recognition.",
+      "videos": [
+        {
+          "title": "Brainvita Solution Video 1",
+          "url": "https://youtu.be/ckSKOmpKv0M"
+        },
+        {
+          "title": "Brainvita Solution Video 2",
+          "url": "https://youtu.be/voxk0pje2iw"
+        }
+      ]
+    },
+    {
+      "id": "donut-puzzle",
+      "title": "Donut Puzzle Challenge",
+      "category": "Puzzle Games",
+      "type": "Puzzle Game",
+      "content": "Creative puzzle-solving techniques demonstrated through engaging video tutorials.",
+      "videos": [
+        {
+          "title": "Donut Puzzle Solution",
+          "url": "https://youtu.be/oo33XzxMDso"
+        }
+      ]
+    },
+    {
+      "id": "india-flag",
+      "title": "India's Flag Puzzle",
+      "category": "Puzzle Games",
+      "type": "Puzzle Game",
+      "content": "Patriotic puzzle challenge with interesting mathematical properties and visual learning.",
+      "videos": [
+        {
+          "title": "India's Flag Puzzle Solution",
+          "url": "https://youtu.be/BgNF1lfleqM"
+        }
+      ]
+    }
+  ]
+}

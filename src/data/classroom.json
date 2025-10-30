@@ -1,0 +1,528 @@
+{
+  "title": "Classroom",
+  "description": "Teaching resources, tutorials, and comprehensive programming courses curated to make learning accessible and engaging for students.",
+  "githubLink": "https://github.com/KiruthikaKuppusaamy",
+  "githubNote": "All course materials, code examples, and projects are available on GitHub for student reference",
+  "courses": [
+    {
+      "id": "c-for-beginners",
+      "title": "C for Beginners",
+      "slug": "c-for-beginners",
+      "summary": "Master the fundamentals of C programming with practical examples and hands-on exercises.",
+      "description": "C is a general purpose high level language. It was developed by Dennis Ritchie for the Unix operating system. C Programming language is used to design the system software like operating system and compiler. UNIX Kernal is completely designed using C language. It is best used for the system that require direct and fast access to hardwares.",
+      "icon": "Code2",
+      "topics": [
+        "Structure of C",
+        "Data Types & Modifiers",
+        "Variables & Constants",
+        "Conditional Statements and Loops",
+        "Operators (Arithmetic, Relational, Logical, Assignment, Bitwise, Unary, Ternary)",
+        "Arrays",
+        "String and Character Functions",
+        "Dynamic Memory Allocation",
+        "Structure and Union",
+        "BitField, Enum, typedef, Preprocessor"
+      ],
+      "materials": [
+        {
+          "title": "Introduction",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/11/c-introduction.pdf"
+        },
+        {
+          "title": "#1: Structure of C",
+          "type": "Video",
+          "url": "https://youtu.be/4jTSHhb4Xgg"
+        },
+        {
+          "title": "#2: Data types",
+          "type": "Video",
+          "url": "https://youtu.be/MbtAawlZu_M"
+        },
+        {
+          "title": "Modifiers",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2024/11/c-programming-modifiers.pdf"
+        },
+        {
+          "title": "Type Qualifiers & Type Conversion",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/11/c-datatypes-type-qualifiers-and-type-conversion.pdf"
+        },
+        {
+          "title": "Formatted and Unformatted IO",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/11/c-formatted-and-unformatted-io.pdf"
+        },
+        {
+          "title": "#3: Variables – Part 1",
+          "type": "Video",
+          "url": "https://youtu.be/Jyql4zaYsPw"
+        },
+        {
+          "title": "#4: Variables – Part 2",
+          "type": "Video",
+          "url": "https://youtu.be/ylpX8BsTmO8"
+        },
+        {
+          "title": "C Variables Notes",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/11/c-variables.pdf"
+        },
+        {
+          "title": "#5: Operators",
+          "type": "Video",
+          "url": "https://youtu.be/cAPV--Z7r3g"
+        },
+        {
+          "title": "#6: Arithmetic Operators",
+          "type": "Video",
+          "url": "https://youtu.be/5AuYVEpAJO8"
+        },
+        {
+          "title": "#7: Relational Operators",
+          "type": "Video",
+          "url": "https://youtu.be/l_hC1U95u_I"
+        },
+        {
+          "title": "#8: Logical Operators",
+          "type": "Video",
+          "url": "https://youtu.be/zl1rRLSAT6w"
+        },
+        {
+          "title": "#9: Assignment Operators",
+          "type": "Video",
+          "url": "https://youtu.be/8fv1dBkjR9M"
+        },
+        {
+          "title": "#10: Bitwise Operators",
+          "type": "Video",
+          "url": "https://youtu.be/cYlQz7pEexg"
+        },
+        {
+          "title": "#11: Unary Operators",
+          "type": "Video",
+          "url": "https://youtu.be/cp_4lCqxsuM"
+        },
+        {
+          "title": "#12: Ternary Operators",
+          "type": "Video",
+          "url": "https://youtu.be/vRZt27agK2M"
+        },
+        {
+          "title": "#13: Conditional Statements and Loops",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2024/11/conditional-statements-and-loops.pdf"
+        },
+        {
+          "title": "#14: Arrays",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/11/c-arrays.pdf"
+        },
+        {
+          "title": "#15: String and Character Functions",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/11/c-string-functions.pdf"
+        },
+        {
+          "title": "#15: Character Type Functions",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2024/11/character-type-functions.pdf"
+        },
+        {
+          "title": "#16: Dynamic Memory Allocation",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2024/01/c-dma.pdf"
+        },
+        {
+          "title": "#16: DMA GitHub",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/C-Programming/blob/main/Dynamic%20Memory%20Allocation"
+        },
+        {
+          "title": "#17: Structure and Union",
+          "type": "PPT",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2024/01/c-structure.pptx"
+        },
+        {
+          "title": "#17: Structure GitHub",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/C-Programming/blob/main/Structure"
+        },
+        {
+          "title": "#18: BitField, Enum, typedef, Preprocessor",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2024/01/c-bitfieldenumtypedefpreprocessor.pdf"
+        },
+        {
+          "title": "#18: BitField GitHub",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/C-Programming/blob/main/BitField-Enum-typedef"
+        }
+      ],
+      "quizzes": [
+        {
+          "title": "#1: C Basics (Data types, Variables, Operators)",
+          "url": "https://forms.gle/dNRPWiwF4jToxSRu9"
+        },
+        {
+          "title": "#2: C Basics (Data types, Variables, Operators)",
+          "url": "https://forms.gle/ziPiL6X4bqA9o9SVA"
+        }
+      ],
+      "link": "/classroom/c-programming"
+    },
+    {
+      "id": "python",
+      "title": "Python Programming",
+      "slug": "python",
+      "summary": "Learn Python from basics to advanced concepts including data analysis and web development.",
+      "description": "In this page, the video link of tutorial and quizzes on the Python languages is posted. After uploading tutorials, quiz link will be given to refresh the concepts.",
+      "icon": "Code",
+      "topics": [
+        "Python Introduction",
+        "Keywords & Identifiers",
+        "Data Types & Variables",
+        "Type Conversion",
+        "IO Operations (Print & Input)",
+        "Strings",
+        "List",
+        "Tuple",
+        "Dictionary",
+        "Files",
+        "NumPy"
+      ],
+      "materials": [
+        {
+          "title": "#1: Python – Introduction",
+          "type": "Video",
+          "url": "https://youtu.be/JhhUhbgaqCw"
+        },
+        {
+          "title": "#2: Python – Displaying Hello & Comments",
+          "type": "Video",
+          "url": "https://youtu.be/GhMvMsx3eWU"
+        },
+        {
+          "title": "#3: Python – Keywords & Identifiers",
+          "type": "Video",
+          "url": "https://youtu.be/ggiVS0TUn9k"
+        },
+        {
+          "title": "#4: Python Datatypes",
+          "type": "Video",
+          "url": "https://youtu.be/8ZUotME2uoc"
+        },
+        {
+          "title": "#5: Python Variables",
+          "type": "Video",
+          "url": "https://youtu.be/DFwDsRhSDoE"
+        },
+        {
+          "title": "#6: Python Type Conversion",
+          "type": "Video",
+          "url": "https://youtu.be/juHWaDiORc4"
+        },
+        {
+          "title": "#7: IO Operations – Print",
+          "type": "Video",
+          "url": "https://youtu.be/LeJYyvFSroY"
+        },
+        {
+          "title": "#8: IO Operations – input",
+          "type": "Video",
+          "url": "https://youtu.be/o_LuA-ejFXM"
+        },
+        {
+          "title": "#9: Strings (PPT)",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/05/python-strings.pdf"
+        },
+        {
+          "title": "#9: Strings Coding",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2024/11/python_strings.ipynb-colab.pdf"
+        },
+        {
+          "title": "#10: List (PPT)",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/05/python-list-1.pdf"
+        },
+        {
+          "title": "#10: List Coding",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/Python-List.git"
+        },
+        {
+          "title": "#11: Tuple (PPT)",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/05/python-tuple.pdf"
+        },
+        {
+          "title": "#11: Tuple Coding",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/Tuples.git"
+        },
+        {
+          "title": "#12: Dictionary (PPT)",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/05/python-dictionary.pdf"
+        },
+        {
+          "title": "#12: Dictionary Coding",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/Python---Dictionary.git"
+        },
+        {
+          "title": "#13: Files (PPT)",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2023/06/6.-python-file.pdf"
+        },
+        {
+          "title": "#13: Files Coding",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/Python-Files.git"
+        },
+        {
+          "title": "#14: NumPy Tutorial",
+          "type": "GitHub",
+          "url": "https://github.com/KiruthikaKuppusaamy/NumPy/blob/main/Numpy_Tutorial.ipynb"
+        },
+        {
+          "title": "Theory Syllabus",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/08/python-programming.pdf"
+        },
+        {
+          "title": "Practical Syllabus",
+          "type": "PDF",
+          "url": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/08/python-programming-lab.pdf"
+        }
+      ],
+      "quizzes": [
+        {
+          "title": "Python Quiz",
+          "url": "https://forms.gle/yaXv1CviXubMEk9YA"
+        }
+      ],
+      "link": "/classroom/python"
+    },
+    {
+      "id": "csharp",
+      "title": "C# Programming",
+      "slug": "c-programming",
+      "summary": "Modern object-oriented programming with C# and .NET framework development.",
+      "description": "C# (pronounced as 'c sharp') is simple, modern, object oriented programming language developed by Microsoft that runs on .Net framework. It was developed by Anders Hejlsberg. C# is widely used for developing Windows applications, Web applications, and Web services.",
+      "icon": "Binary",
+      "topics": [
+        "Structure of Java Program (Prerequisite)",
+        "Console Applications",
+        "User Interaction with Console",
+        "Windows Applications",
+        "Textbox in Forms",
+        "CheckBox, Radio Button, CheckedBoxList",
+        "Combo box in Forms"
+      ],
+      "materials": [
+        {
+          "title": "#1: Structure of Java Program (Prerequisite to C#)",
+          "type": "Video",
+          "url": "https://youtu.be/sxGxaoOxoKo"
+        },
+        {
+          "title": "#2: Hello Console",
+          "type": "Video",
+          "url": "https://youtu.be/KV6ST9sExVI"
+        },
+        {
+          "title": "#3: User Interaction with Console",
+          "type": "Video",
+          "url": "https://youtu.be/b0eDEat9nik"
+        },
+        {
+          "title": "#4: Example Program in Console",
+          "type": "Video",
+          "url": "https://youtu.be/gfgg__Xyi7Y"
+        },
+        {
+          "title": "#5: Hello Windows",
+          "type": "Video",
+          "url": "https://youtu.be/tiaZ9C0s9O4"
+        },
+        {
+          "title": "#6: Using Textbox in Form",
+          "type": "Video",
+          "url": "https://youtu.be/S30PatuEUOI"
+        },
+        {
+          "title": "#7: Using CheckBox, Radio Button, CheckedBoxList",
+          "type": "Video",
+          "url": "https://youtu.be/9TBfdAj9fRk"
+        },
+        {
+          "title": "#8: Using Combo box in Form",
+          "type": "Video",
+          "url": "https://youtu.be/WMG_iw1n54Q"
+        }
+      ],
+      "quizzes": [
+        {
+          "title": "Quiz 1 – Basic Questions in C#",
+          "url": "https://forms.gle/M729VnsHyzWWXvGJ8"
+        }
+      ],
+      "link": "/classroom/csharp"
+    },
+    {
+      "id": "mathematics",
+      "title": "Allied Mathematics",
+      "slug": "tutorials",
+      "summary": "Essential allied mathematical foundations for computer science students.",
+      "description": "Mathematics tutorials covering Numerical Methods, Discrete Mathematics, and Biostatistics.",
+      "icon": "Calculator",
+      "topics": [
+        "Measures of Central Tendency",
+        "Measures of Spread/Dispersion",
+        "Lattices and Graphs",
+        "Algebraic Structures",
+        "System of Linear Algebraic Equations",
+        "Solution of Numerical – Algebraic and Transcendental Equations"
+      ],
+      "sections": [
+        {
+          "title": "Numerical Methods",
+          "materials": [
+            {
+              "title": "Gauss Elimination Method",
+              "video": "https://youtu.be/zTCKhiwUG-Q",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/11/gauss-elimination-method.pdf"
+            },
+            {
+              "title": "Gauss Jordan Method",
+              "video": "https://youtu.be/lkTl9t4zzLw",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/11/gauss-jordan-method.pdf"
+            },
+            {
+              "title": "Gauss Jacobi Method",
+              "video": "https://youtu.be/72nzPiJMvek",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/11/gauss-jacobi-method.pdf"
+            },
+            {
+              "title": "Gauss Seidel Method",
+              "video": "https://youtu.be/l-lJwaRlYwo",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/11/gauss-seidel-method.pdf"
+            },
+            {
+              "title": "Algebraic and Transcendental Definition",
+              "video": "https://youtu.be/Za0R9FQYRd8",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/12/algebraic-transcendental-definition-1.jpg"
+            },
+            {
+              "title": "Regular Falsi Method",
+              "video": "https://youtu.be/jQvi4IlUeYI",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/12/regular-falsi-intro.jpg"
+            },
+            {
+              "title": "Regular Falsi Method in Algebraic Equation",
+              "video": "https://youtu.be/VhPQrOSYuTg",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/12/rf-algebraic-1.jpg"
+            },
+            {
+              "title": "Regular Falsi Method in Transcendental Equation",
+              "video": "https://youtu.be/9Lltrhd8xN4",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/12/rf-transcendental-1.jpg"
+            },
+            {
+              "title": "Newton's Raphson Method in Algebraic Equation",
+              "video": "https://youtu.be/pO8K6AD-8nw",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/12/newton-algebraic-1.jpg"
+            },
+            {
+              "title": "Newton's Raphson Method in Transcendental Equation",
+              "video": "https://youtu.be/paFvUIdK750",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/12/newton-transcendental-1.jpg"
+            },
+            {
+              "title": "Measures of Central Tendency - Introduction",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2020/12/measures-of-central-tendency.jpg"
+            },
+            {
+              "title": "Measures of Location - Mode",
+              "video": "https://youtu.be/dxHlQMhXAkk",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/01/mode.pdf"
+            },
+            {
+              "title": "Median",
+              "video": "https://youtu.be/Bc0b_Y5zmrY",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/01/median.pdf"
+            },
+            {
+              "title": "Mean",
+              "video": "https://youtu.be/C_ssgTM9uGM",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/01/mean.pdf"
+            },
+            {
+              "title": "Percentile",
+              "video": "https://youtu.be/gC03vyIxXWc",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/01/percentile.pdf"
+            },
+            {
+              "title": "Measures of Spread/Dispersion - Range & IQR",
+              "video": "https://youtu.be/GsT73O5D6nc",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/01/range.pdf"
+            },
+            {
+              "title": "Standard Deviation",
+              "video": "https://youtu.be/7EeOACtYqFY",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/01/sd.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Discrete Mathematics",
+          "materials": [
+            {
+              "title": "Lattice – Definition",
+              "video": "https://www.youtube.com/watch?v=8rtXnnRP8Wg",
+              "description": "Lattice is basically a Partial Ordered Set if for every pair in the set satisfies the Least Upper Bound and Greatest Lower Bound."
+            },
+            {
+              "title": "Lattice – Examples",
+              "video": "https://youtu.be/Kh8KZ_zc31k",
+              "description": "In this Video, Hasse Diagram is mentioned. It's the graphical representation of relation of elements of partially ordered set."
+            },
+            {
+              "title": "Lattice – Properties",
+              "video": "https://www.youtube.com/watch?v=VOE1FEeMsvw",
+              "description": "Lattice satisfies four properties namely Idempotent, Commutative, Associative and Absorption."
+            },
+            {
+              "title": "Algebraic Structures",
+              "video": "https://youtu.be/8Fpu0ZR_RmM"
+            },
+            {
+              "title": "Quiz 1: Lattices and Graphs",
+              "url": "https://forms.gle/sttMHYaKyQkHxvHp8",
+              "description": "25 questions on Lattices and Graphs"
+            },
+            {
+              "title": "Model Exam",
+              "url": "https://forms.gle/cVdoErVwKNBkznyx8",
+              "description": "Total Marks: 75"
+            }
+          ]
+        },
+        {
+          "title": "Syllabus",
+          "materials": [
+            {
+              "title": "Mathematics 1 – Numerical Methods and Biostatistics Syllabus",
+              "notes": "https://kkiruthikha.wordpress.com/wp-content/uploads/2021/09/numerical-methods-and-bio-statistics.jpg"
+            }
+          ]
+        }
+      ],
+      "link": "/classroom/mathematics"
+    }
+  ]
+}
