@@ -2,9 +2,10 @@ import { motion } from 'framer-motion';
 import { Lightbulb, Rocket, DollarSign, Target, Globe, BookOpen } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import profileData from '@/data/profile.json';
+import { useData } from '@/contexts/DataContext';
 
 export const Research = () => {
+  const { profileData } = useData();
   const { research } = profileData;
 
   const containerVariants = {

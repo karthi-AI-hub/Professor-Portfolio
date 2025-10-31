@@ -6,7 +6,8 @@ import { Code2, Code, Binary, Calculator, Github, ExternalLink, BookOpen, FileTe
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import classroomData from '@/data/classroom.json';
+import { useData } from '@/contexts/DataContext';
+import { LoadingSpinner } from '@/components/ui/loading-spinner';
 
 const iconMap = {
   Code2,
@@ -15,14 +16,44 @@ const iconMap = {
   Calculator,
 };
 
-const stats = [
-  { icon: BookOpen, label: "Courses", value: "4" },
-  { icon: Users, label: "Students", value: "500+" },
-  { icon: PlayCircle, label: "Video Lessons", value: "50+" },
-  { icon: Award, label: "Skill Levels", value: "3" },
-];
-
 const ClassroomPage = () => {
+  const { classroomData, loading } = useData();
+  
+  const coursesCount = classroomData.courses?.length || 0;
+  const totalVideoLessons = classroomData.courses?.reduce((total, course) => {
+    const videoCount = course.materials?.filter(m => m.type === 'Video').length || 0;
+    const sectionVideos = (course as any).sections?.reduce((sectionTotal: number, section: any) => {
+      return sectionTotal + (section.materials?.filter((m: any) => m.video).length || 0);
+    }, 0) || 0;
+    return total + videoCount + sectionVideos;
+  }, 0) || 0;
+  
+  const stats = [
+    { icon: BookOpen, label: "Courses", value: coursesCount.toString() },
+    { icon: Users, label: "Students", value: "500+" },
+    { icon: PlayCircle, label: "Video Lessons", value: `${totalVideoLessons}+` },
+    { icon: Award, label: "Skill Levels", value: "3" },
+  ];
+  
+  if (loading) {
+    return (
+      <>
+        <SEO 
+          title="Classroom - Programming Courses & Tutorials | Dr. Kiruthika Kuppusaamy"
+          description="Comprehensive programming courses in C, Python, C#, and Mathematics. Learn with practical examples, code repositories, and video tutorials."
+          keywords="C Programming Tutorial, Python Course, C# Programming, Allied Mathematics, Programming for Beginners, Coding Courses"
+        />
+        <div className="min-h-screen bg-background">
+          <Header />
+          <main className="flex items-center justify-center min-h-[60vh]">
+            <LoadingSpinner size="lg" message="Loading courses..." />
+          </main>
+          <Footer />
+        </div>
+      </>
+    );
+  }
+  
   return (
     <>
       <SEO 
@@ -114,7 +145,7 @@ const ClassroomPage = () => {
                     <p className="text-sm text-foreground/60 mb-1">All course materials on GitHub</p>
                     <Button asChild variant="link" size="sm" className="text-primary p-0 h-auto font-semibold">
                       <a href={classroomData.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                        @KiruthikaKuppusaamy
+                        {classroomData.githubLink}
                         <ExternalLink className="h-3 w-3" />
                       </a>
                     </Button>
@@ -177,14 +208,15 @@ const ClassroomPage = () => {
                               </div>
                             </div>
                             
+                            <h3 className="text-2xl font-semibold text-foreground mb-2 line-clamp-1">
+                              {course.title}
+                            </h3>
                             <p className="text-foreground/70 leading-relaxed line-clamp-2">
                               {course.summary}
                             </p>
                           </div>
 
-                          {/* Course Body */}
                           <div className="p-8">
-                            {/* Statistics */}
                             <div className="grid grid-cols-4 gap-3 mb-6">
                               <div className="text-center p-3 bg-background/50 rounded-lg hover:bg-background/80 transition-colors">
                                 <FileText className="h-4 w-4 text-primary mx-auto mb-2" />

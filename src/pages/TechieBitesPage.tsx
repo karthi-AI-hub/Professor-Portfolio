@@ -1,13 +1,12 @@
 import { SEO } from '@/components/SEO';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { 
-  Cpu, Calendar, User, ChevronDown, ChevronUp, ExternalLink, 
-  BookOpen, Clock, Tag, Sparkles, ArrowRight, X
+  Cpu, Calendar, User, BookOpen, Clock, Tag, Sparkles, ArrowRight, X
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -17,7 +16,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import techiebitesData from '@/data/techiebites.json';
+import { useData } from '@/contexts/DataContext';
+import { LoadingSpinner } from '@/components/ui/loading-spinner';
 
 const categoryColors = {
   'Artificial Intelligence': 'bg-purple-500/20 text-purple-600 border-purple-500/30',
@@ -33,6 +33,7 @@ const categoryColors = {
 };
 
 const TechieBitesPage = () => {
+  const { techiebitesData, loading } = useData();
   const [selectedPost, setSelectedPost] = useState<typeof techiebitesData.posts[0] | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -43,6 +44,25 @@ const TechieBitesPage = () => {
   const filteredPosts = selectedCategory 
     ? techiebitesData.posts.filter(post => post.category === selectedCategory)
     : techiebitesData.posts;
+  
+  if (loading) {
+    return (
+      <>
+        <SEO 
+          title="TechieBites - Tech Insights & Articles | Dr. Kiruthika Kuppusaamy"
+          description="Technology articles, AI insights, and analysis on emerging trends including ChatGPT, Gemini, Copilot, Electric Vehicles, and engineering education."
+          keywords="AI Chatbots Comparison, ChatGPT vs Gemini, Technology Trends, Electric Vehicles, Engineering Education, Tech Articles"
+        />
+        <div className="min-h-screen bg-background">
+          <Header />
+          <main className="flex items-center justify-center min-h-[60vh]">
+            <LoadingSpinner size="lg" message="Loading tech articles..." />
+          </main>
+          <Footer />
+        </div>
+      </>
+    );
+  }
 
   const openPostModal = (post: typeof techiebitesData.posts[0]) => {
     setSelectedPost(post);

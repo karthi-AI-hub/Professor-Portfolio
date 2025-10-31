@@ -2,9 +2,10 @@ import { motion } from 'framer-motion';
 import { CheckCircle2, GraduationCap, Briefcase, Award, Calendar, MapPin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import profileData from '@/data/profile.json';
+import { useData } from '@/contexts/DataContext';
 
 export const About = () => {
+  const { profileData } = useData();
   const { about, positions } = profileData;
 
   const containerVariants = {
@@ -67,15 +68,15 @@ export const About = () => {
           <motion.div variants={itemVariants} className="mb-16">
             <Card className="border-primary/20 bg-card/50 backdrop-blur-sm shadow-lg">
               <CardContent className="p-8 md:p-12">
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-6 justify-center">
                   <Award className="h-8 w-8 text-primary" />
                   <h3 className="text-2xl font-bold text-foreground">My Story</h3>
                 </div>
-                <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+                <p className="text-lg text-foreground/80 leading-relaxed mb-6 text-justify">
                   {about.biography}
                 </p>
                 <div className="border-l-4 border-primary/30 pl-4 py-2 bg-primary/5 rounded-r">
-                  <p className="text-foreground/70 italic">
+                  <p className="text-foreground/70 italic text-justify">
                     "{about.mission}"
                   </p>
                 </div>

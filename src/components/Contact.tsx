@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import profileData from '@/data/profile.json';
+import { useData } from '@/contexts/DataContext';
 
 export const Contact = () => {
+  const { profileData } = useData();
   const { personalInfo } = profileData;
 
   const contactItems = [

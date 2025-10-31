@@ -3,10 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Home, BookOpen, Cpu, Brain, GraduationCap, ChevronDown, Puzzle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
-import contentData from '@/data/content.json';
-import classroomData from '@/data/classroom.json';
+import { useData } from '@/contexts/DataContext';
 
 export const Header = () => {
+  const { contentData, classroomData } = useData();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeHover, setActiveHover] = useState<string | null>(null);

@@ -10,7 +10,8 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import brainpopData from '@/data/brainpop.json';
+import { useData } from '@/contexts/DataContext';
+import { LoadingSpinner } from '@/components/ui/loading-spinner';
 
 const quizTypeColors = {
   'Scrambled Words': 'bg-purple-500/20 text-purple-600 border-purple-500/30',
@@ -29,6 +30,7 @@ const categoryIcons = {
 };
 
 const BrainPopPage = () => {
+  const { brainpopData, loading } = useData();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const categories = brainpopData.categories;
@@ -41,6 +43,37 @@ const BrainPopPage = () => {
     : allQuizzes;
 
   const totalQuizzes = allQuizzes.length;
+  
+  // Calculate dynamic statistics
+  const programmingQuizzes = allQuizzes.filter(q => 
+    q.category.toLowerCase().includes('programming') || 
+    q.category.toLowerCase().includes('c programming') || 
+    q.category.toLowerCase().includes('python')
+  ).length;
+  
+  const securityQuizzes = allQuizzes.filter(q => 
+    q.category.toLowerCase().includes('security') || 
+    q.category.toLowerCase().includes('cybersecurity')
+  ).length;
+  
+  if (loading) {
+    return (
+      <>
+        <SEO 
+          title="Brain Pops - Educational Quizzes & Puzzles | Dr. Kiruthika Kuppusaamy"
+          description="Brain-challenging quizzes, puzzles, and educational games to reinforce programming and computer science concepts. C Programming, Python, and Cybersecurity quizzes."
+          keywords="Programming Quizzes, C Programming Puzzles, Python Quizzes, Cybersecurity Word Search, Coding Challenges, Educational Games, Brain Teasers"
+        />
+        <div className="min-h-screen bg-background">
+          <Header />
+          <main className="flex items-center justify-center min-h-[60vh]">
+            <LoadingSpinner size="lg" message="Loading quizzes..." />
+          </main>
+          <Footer />
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -138,14 +171,14 @@ const BrainPopPage = () => {
                     <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl mx-auto mb-3">
                       <Code className="h-6 w-6 text-primary" />
                     </div>
-                    <div className="text-2xl font-bold text-foreground">14</div>
+                    <div className="text-2xl font-bold text-foreground">{programmingQuizzes || '14'}</div>
                     <div className="text-sm text-foreground/60">Programming</div>
                   </div>
                   <div className="text-center">
                     <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-xl mx-auto mb-3">
                       <Shield className="h-6 w-6 text-accent" />
                     </div>
-                    <div className="text-2xl font-bold text-foreground">4</div>
+                    <div className="text-2xl font-bold text-foreground">{securityQuizzes || '5'}</div>
                     <div className="text-sm text-foreground/60">Security</div>
                   </div>
                 </motion.div>

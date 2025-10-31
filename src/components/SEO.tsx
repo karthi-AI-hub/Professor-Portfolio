@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import profileData from '@/data/profile.json';
-import contentData from '@/data/content.json';
+import { useData } from '@/contexts/DataContext';
 
 interface SEOProps {
   title?: string;
@@ -10,13 +9,14 @@ interface SEOProps {
 }
 
 export const SEO = ({ title, description, keywords, image }: SEOProps = {}) => {
+  const { profileData, contentData } = useData();
   const { personalInfo, seo } = profileData;
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://kiruthika-kuppusaamy.com';
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://kiruthika.vercel.app/';
   const profileImage = image || `${baseUrl}${personalInfo.photo}`;
   
   const pageTitle = title || contentData.seo.title;
   const pageDescription = description || contentData.seo.description;
-  const pageKeywords = keywords || contentData.seo.keywords;
+  const pageKeywords = keywords || (Array.isArray(contentData.seo.keywords) ? contentData.seo.keywords.join(', ') : contentData.seo.keywords);
 
   const structuredData = {
     "@context": "https://schema.org",

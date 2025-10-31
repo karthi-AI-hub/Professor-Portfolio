@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import { Mail, MapPin, ExternalLink, Download, Award, Clock, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileData from '@/data/profile.json';
-import contentData from '@/data/content.json';
+import { useData } from '@/contexts/DataContext';
 
 export const Hero = () => {
+  const { profileData, contentData } = useData();
   const { personalInfo } = profileData;
 
   const containerVariants = {

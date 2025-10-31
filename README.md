@@ -19,7 +19,7 @@
 
 A modern, blazingly fast, and SEO-optimized portfolio platform designed specifically for educators, researchers, and academic professionals.
 
-![Hero Preview](https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=Professor+Portfolio+Preview)
+![Professor Portfolio Preview](public/preview.png)
 
 </div>
 
@@ -622,6 +622,85 @@ npm run dev -- --port 3000
 ```
 
 </details>
+
+---
+
+## 🔐 Admin Dashboard Setup
+
+The platform includes a secure admin dashboard for authorized users to edit content without modifying code.
+
+### Firebase Configuration
+
+1. **Create a Firebase Project**
+   - Go to [Firebase Console](https://console.firebase.google.com/)
+   - Create a new project or use an existing one
+   - Enable **Authentication** (Email/Password provider)
+   - Enable **Firestore Database**
+
+2. **Get Your Firebase Credentials**
+   - In Firebase Console, go to Project Settings > General
+   - Scroll down to "Your apps" section
+   - Copy your Firebase configuration
+
+3. **Set Up Environment Variables**
+   ```bash
+   # Create .env file
+   
+   # Edit .env with your Firebase credentials
+   nano .env
+   ```
+
+4. **Add Your Credentials to `.env`**
+   ```env
+   VITE_FIREBASE_API_KEY=your-api-key-here
+   VITE_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+   VITE_FIREBASE_PROJECT_ID=your-project-id
+   VITE_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
+   VITE_FIREBASE_MESSAGING_SENDER_ID=123456789
+   VITE_FIREBASE_APP_ID=your-app-id-here
+   ```
+
+5. **Create Admin User**
+   - In Firebase Console, go to Authentication
+   - Click "Add user"
+   - Enter your admin email and password
+   - This account will be able to access `/admin/dashboard`
+
+### Using the Admin Dashboard
+
+1. Navigate to `/admin/login` in your deployed site
+2. Sign in with your admin credentials
+3. Access the dashboard to edit:
+   - Profile information and contact details
+   - Classroom courses and materials
+   - BrainPops quizzes
+   - TechieBites articles
+   - TimePass puzzles
+
+**🔒 Security Note:** The admin routes are completely separate from public pages. End users will never see login forms or admin interfaces.
+
+### Vercel Deployment with Environment Variables
+
+When deploying to Vercel:
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+
+# Add environment variables in Vercel Dashboard:
+# Go to: Project Settings > Environment Variables
+# Add all VITE_FIREBASE_* variables from your .env file
+```
+
+Or add them via CLI:
+```bash
+vercel env add VITE_FIREBASE_API_KEY
+vercel env add VITE_FIREBASE_AUTH_DOMAIN
+# ... repeat for all Firebase variables
+```
 
 ---
 

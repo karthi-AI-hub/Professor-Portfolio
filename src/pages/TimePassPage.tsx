@@ -18,7 +18,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import timepassData from '@/data/timepass.json';
+import { useData } from '@/contexts/DataContext';
+import { LoadingSpinner } from '@/components/ui/loading-spinner';
 
 const categoryIcons = {
   'Fun with numbers': Calculator,
@@ -31,6 +32,7 @@ const typeColors = {
 };
 
 const TimePassPage = () => {
+  const { timepassData, loading } = useData();
   const [selectedEntry, setSelectedEntry] = useState<typeof timepassData.entries[0] | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -44,6 +46,25 @@ const TimePassPage = () => {
 
   const featuredEntries = timepass.entries.filter(entry => entry.featured);
   const videoEntries = timepass.entries.filter(entry => entry.videos && entry.videos.length > 0);
+  
+  if (loading) {
+    return (
+      <>
+        <SEO 
+          title="TimePass - Fun with Math & Puzzles | Dr. Kiruthika Kuppusaamy"
+          description="Explore mathematical tricks, brain teasers, and puzzle-solving techniques. Learn the magic behind numbers with engaging video tutorials."
+          keywords="Math Tricks, Brain Teasers, Number Puzzles, Brainvita Solutions, Mathematical Magic, Puzzle Games"
+        />
+        <div className="min-h-screen bg-background">
+          <Header />
+          <main className="flex items-center justify-center min-h-[60vh]">
+            <LoadingSpinner size="lg" message="Loading puzzles..." />
+          </main>
+          <Footer />
+        </div>
+      </>
+    );
+  }
 
   const openEntryModal = (entry: typeof timepassData.entries[0]) => {
     setSelectedEntry(entry);

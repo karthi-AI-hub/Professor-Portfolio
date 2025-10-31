@@ -1,19 +1,19 @@
 import { Heart, Mail, MapPin, Phone, ExternalLink, Github, Youtube, Globe, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileData from '@/data/profile.json';
-import contentData from '@/data/content.json';
+import { useData } from '@/contexts/DataContext';
 
 export const Footer = () => {
+  const { profileData, contentData } = useData();
   const { personalInfo, socialLinks } = profileData;
   const { footer } = contentData;
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', href: '#hero' },
-    { name: 'About', href: '#about' },
-    { name: 'Research', href: '#research' },
-    { name: 'Teaching', href: '#teaching' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Classroom', href: '/classroom' },
+    { name: 'BrainPops', href: '/brainpops' },
+    { name: 'TechieBites', href: '/techiebites' },
+    { name: 'TimePass', href: '/timepass' },
   ];
 
   const socialLinksList = footer.links.filter(link => 

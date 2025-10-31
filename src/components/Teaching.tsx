@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { BookOpen, Users, GraduationCap, Video, FileText, Github, Award, BarChart3 } from 'lucide-react';
+import { BookOpen, Video, FileText, Github, Award } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import profileData from '@/data/profile.json';
-import contentData from '@/data/content.json';
+import { useData } from '@/contexts/DataContext';
 
 export const Teaching = () => {
+  const { profileData, contentData } = useData();
   const { teaching } = profileData;
   const { statistics } = contentData;
 

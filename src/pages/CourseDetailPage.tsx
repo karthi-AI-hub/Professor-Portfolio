@@ -13,7 +13,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import classroomData from '@/data/classroom.json';
+import { useData } from '@/contexts/DataContext';
+import { LoadingSpinner } from '@/components/ui/loading-spinner';
 
 const iconMap = {
   Code2,
@@ -63,10 +64,26 @@ const getTypeLabel = (type: string) => {
 };
 
 const CourseDetailPage = () => {
+  const { classroomData, loading } = useData();
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   
   const course = classroomData.courses.find(c => c.slug === slug);
+
+  if (loading) {
+    return (
+      <>
+        <SEO title="Loading Course..." />
+        <div className="min-h-screen bg-background">
+          <Header />
+          <main className="flex items-center justify-center min-h-[60vh]">
+            <LoadingSpinner size="lg" message="Loading course details..." />
+          </main>
+          <Footer />
+        </div>
+      </>
+    );
+  }
 
   if (!course) {
     return (
