@@ -19,7 +19,7 @@
 
 A modern, blazingly fast, and SEO-optimized portfolio platform designed specifically for educators, researchers, and academic professionals.
 
-![Professor Portfolio Preview](public/preview.png)
+![Professor Portfolio Preview](public/Preview.png)
 
 </div>
 
